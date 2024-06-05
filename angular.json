@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ngrx-books": {
+    "ngrx-redux": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -23,7 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/ngrx-books",
+            "outputPath": "dist/ngrx-redux",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -69,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "ngrx-books:build:production"
+              "buildTarget": "ngrx-redux:build:production"
             },
             "development": {
-              "buildTarget": "ngrx-books:build:development"
+              "buildTarget": "ngrx-redux:build:development"
             }
           },
           "defaultConfiguration": "development"

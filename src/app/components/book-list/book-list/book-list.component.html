@@ -1,0 +1,5 @@
+<div *ngFor="let book of books$ | async">
+  {{ book.title }} by {{ book.author }}
+  <button (click)="remove(book.id)">Remove</button>
+</div>
+<button (click)="add()">Add Random Book</button>
